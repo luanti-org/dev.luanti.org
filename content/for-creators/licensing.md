@@ -3,6 +3,7 @@ title: Licensing
 aliases:
 - /Licensing
 - /licensing
+- /content-dev/licensing
 ---
 
 # Licensing

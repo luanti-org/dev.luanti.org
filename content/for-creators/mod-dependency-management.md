@@ -2,6 +2,7 @@
 title: Mod Dependency Management
 aliases:
 - /mod-dependency-management
+- /content-dev/mod-dependency-management
 ---
 
 # Mod Dependency Management

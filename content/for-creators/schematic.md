@@ -3,6 +3,7 @@ title: Schematic
 aliases:
 - /Schematic
 - /schematic
+- /content-dev/schematic
 ---
 
 # Schematic
@@ -34,7 +35,7 @@ The [Schematic Editor](https://content.luanti.org/packages/Wuzzy/schemedit/) mod
 In addition to this there is the external program [MTSEdit](https://gitlab.com/bztsrc/mtsedit) where you can edit schematics in an isometric view.
 
 ## Schematic table
-The schematic table has 2 mandatories attributes and 1 optional
+The schematic table has 2 mandatory attributes and 1 optional attribute.
 
 * size: the bounding box in nodes, a 3D vector
 * data: the flat list of MapNode to write
@@ -70,7 +71,7 @@ local my_schematic = {
 	}
 }
 ```
-You can then provide my_schematic everytime a Schematic specifier is requested, for example in `core.register_decoration`.
+You can then provide `my_schematic` every time a Schematic specifier is requested, for example in `core.register_decoration`.
 
 ## Placing schematics
 Schematics are placed either with core.place_schematic or at world generation with `core.register_decoration`.
@@ -80,4 +81,4 @@ When using `core.register_decoration`, be aware that the decoration is placed in
 When using `core.place_schematic`, you can provide the offset manually by changing the reference pos.
 
 ## Incomplete
-Missing some explainations about yslice_prob against individual node probability
+Missing some explanations about `yslice_prob` against individual node probability

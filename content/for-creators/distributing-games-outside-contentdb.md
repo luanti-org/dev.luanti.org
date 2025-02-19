@@ -1,9 +1,11 @@
 ---
-title: Distributing Luanti Games
+title: Distributing Games Outside ContentDB
+aliases:
+- /distributing-luanti-games
 ---
 
-# Distributing Luanti Games
-This page contains (at times very opinionated) notes about taking a Luanti game and distributing it outside of Luanti. It assumes that you know how to compile Luanti from source.
+# Distributing Games Outside ContentDB
+This page documents how to publish a Luanti game outside of [ContentDB](/about/contentdb). It assumes that you know how to compile Luanti from source.
 
 Luanti as an engine itself doesn't have any official means to export a game into a self-contained package with the engine, instead games are published on [ContentDB](https://content.luanti.org/packages/?type=game) which allows your game to be installed from the main menu content browser. However as Luanti is free software you can fork the engine to rebrand it and bundle it with your game for distribution outside of the Luanti ecosystem.
 
@@ -15,7 +17,9 @@ Generally you're able to customize the main menu (at `builtin/mainmenu/`), which
 ### Locking down the singleplayer tab to one game
 As of 5.8.0-dev, the engine will automatically detect what games are installed and pick the first one installed. If you ship the engine with just your game, then it will select that game on the main menu.
 
-To remove the gamebar, it's enough to just remove this code in `builtin/mainmenu/tab_local.lua` and set the sizes of the buttonbar to 0:
+To remove the game bar, it's enough to just remove this code in `builtin/mainmenu/tab_local.lua` and set the sizes of the button bar to 0:
+
+{{% comment %}} cspell:disable {{% /comment %}}
 
 ```lua
 @@ -78,32 +78,8 @@ function singleplayer_refresh_gamebar()
@@ -52,6 +56,8 @@ To remove the gamebar, it's enough to just remove this code in `builtin/mainmenu
  end
 ```
 
+{{% comment %}} cspell:enable {{% /comment %}}
+
 ### Rebranding the main menu
 Copy the game's `menu/` textures into `textures/base/pack/`.
 
@@ -59,7 +65,7 @@ Copy the game's `menu/` textures into `textures/base/pack/`.
 * Rename `background.png` to `menu_bg.png`
 * Rename `icon.png` to `logo.png`
 
-The main menu branding doesn't support randomised textures (unless you implement that yourself), so you would need to pick one.
+The main menu branding doesn't support randomized textures (unless you implement that yourself), so you would need to pick one.
 
 ### Add to the "About" tab
 You should keep the Luanti credits list in order to follow Luanti's license regarding attribution, but you may choose to add contributors and developers to the game above it.
@@ -76,6 +82,8 @@ local minetest_info = {
 
 ### Filtering the serverlist
 You can filter the serverlist to only show servers running the specified game. Add the following code to `builtin/mainmenu/serverlistmgr.lua`:
+
+{{% comment %}} cspell:disable {{% /comment %}}
 
 ```lua
 @@ -181,7 +181,18 @@ function serverlistmgr.sync()
@@ -100,6 +108,8 @@ You can filter the serverlist to only show servers running the specified game. A
  		function(result)
 ```
 
+{{% comment %}} cspell:enable {{% /comment %}}
+
 Replace the `kiosk_game` variable with the gameid of your game.
 
 ### Filtering ContentDB packages
@@ -111,7 +121,7 @@ In `builtin/mainmenu/dlg_contentstore.lua`, where it constructs an API URL that 
 "/api/packages/?type=mod&type=game&type=txp&protocol_version=" ..
 ```
 
-Add the `&game=<author>/<gamepackage>` argument onto the URL. For example, `Warr1024/nodecore` for NodeCore.
+Add the `&game=<author>/<game_package>` argument onto the URL. For example, `Warr1024/nodecore` for NodeCore.
 
 Mods and texture packs are able to specify game compatibility, however game agnostic mods will unfortunately not be shown.
 
@@ -121,7 +131,7 @@ You can change the default settings in `src/defaultsettings.cpp` to better suit 
 ## Windows
 
 ### Rebranding
-To fully change the name of the engine you can change the name of the "project" in `CMakeLists.txt`. This will change the name of the executable and the name used on the titlebar, among other places. Keep in mind this will also mean you need to rename files in `misc/` and the translation files.
+To fully change the name of the engine you can change the name of the "project" in `CMakeLists.txt`. This will change the name of the executable and the name used on the title bar, among other places. Keep in mind this will also mean you need to rename files in `misc/` and the translation files.
 
 To change the icon that's used for Luanti builds on Windows you'll have to replace `misc/minetest-icon.ico` with your game's icon in the Windows ICO file format.
 
@@ -151,13 +161,13 @@ TODO
 ## Licensing
 As the Luanti engine is licensed under LGPLv2.1, it means that any changes you make to the engine source code need to be made available. This however may not apply to the game you're distributing, which could even be licensed under proprietary terms if you do not make use of any copyleft mods. This isn't legal advice however, and you should consult a lawyer to be absolutely sure.
 
-You can choose to version control your engine fork in Git (which has the added bonus of being able to automatically make builds using CI on your favourite Git host). Alternatively for the absolute minimum necessary you can export your current source tree with modifications as an archive file using something like this:
+You can choose to version control your engine fork in Git (which has the added bonus of being able to automatically make builds using CI on your favorite Git host). Alternatively for the absolute minimum necessary you can export your current source tree with modifications as an archive file using something like this:
 
 ```bash
 stashName=`git stash create`; git archive $stashName | gzip > ../cool-game-engine-fork-$(date +'%Y-%m-%d').tar.gz
 ```
 
-Make some place where this file is available, and be sure to update it whenever new builds are made. `gzip` can be replaced with your favourite compression method, if so desired.
+Make some place where this file is available, and be sure to update it whenever new builds are made. `gzip` can be replaced with your favorite compression method, if so desired.
 
 ## Examples
 A large portion of the initial version of this page documents changes that were made to the engine for the [NodeCore Android app](https://play.google.com/store/apps/details?id=se.voxelmanip.nodecore). Its source code is available for download [here](https://nodecore.voxelmanip.se/src/) and can be used as an example of how to use the advice given on this page (though it is several versions behind at this point).

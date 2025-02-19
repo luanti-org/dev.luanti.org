@@ -1,11 +1,14 @@
 ---
-title: Introduction to L-system trees
+title: L-system trees
 aliases:
 - /Introduction_to_L-system-trees
 - /introduction-to-l-system-trees
+- /content-dev/introduction-to-l-system-trees
+- /L-system_tree_examples
+- /l-system-tree-examples
 ---
 
-# Introduction to L-system trees
+# L-system trees
 Luanti has two types of trees built in: Small simple ones like the trees in the vanilla Minetest Game, and more complex ones generated using a L-system and a tree definition. L-system trees can be spawned with `core.spawn_tree` and are defined by a `treedef` table.
 
 The following chat log might be helpful in understanding how L-system trees work: [#minetest 2013-08-08](http://irc.minetest.ru/minetest/2013-08-08#i_3250058)
@@ -62,7 +65,7 @@ Lindenmayer basics
 
 ### Replacing
 
-A L-system “program” consists of the axiom and replacement rules. In addition to above, turtle knows the symbols A, B, C and D, which can be used in L-systems. Everytime one of those symbols is found in the axiom, it will be replaced with the whole corresponding rule. This will be done, until there are no more replacements to do or the maximum recursion depth is reached.
+A L-system “program” consists of the axiom and replacement rules. In addition to above, turtle knows the symbols A, B, C and D, which can be used in L-systems. Every time one of those symbols is found in the axiom, it will be replaced with the whole corresponding rule. This will be done, until there are no more replacements to do or the maximum recursion depth is reached.
 
 
 |Symbol|Action                 |
@@ -106,7 +109,102 @@ The symbols a, b, c, d work like the symbols A, B, C, and D, respectively, but t
 |d     |Replace with rule set D with a 60% chance, do nothing otherwise|
 
 
-### See also
+---
+title: L-system tree examples
+aliases:
+- /L-system_tree_examples
+---
 
-* [L-system tree examples](/L-system_tree_examples "L-system tree examples")
+## L-system tree examples
+This wiki page is a collection of example [L-system trees](/Introduction_to_L-system_trees "Introduction to L-system trees"). The intention is to help newbies better understand L-system trees, but also to provide usable tree definitions which could be used in mods.
+
+### Giant dry shrub
+
+Works in any Luanti game with basic map generation.
+
+```lua
+treedef={
+   axiom = "A/A/A/A/A/A/A/A/A/A/A/A",
+   rules_a = "[B+B+B+B]",
+   rules_b = "[FFFFFFFFFF]",
+   trunk = "mapgen_tree",
+   angle = 30,
+   iterations = 1,
+   random_level = 0,
+   trunk_type = "single",
+   thin_branches = true
+}
+```
+
+[![Giant Dry Shrub](/images/Giant_Dry_Shrub.webp)](/images/Giant_Dry_Shrub.webp)
+
+### Apple tree
+
+Works in any game with basic map generation. This tree is used as the example tree in the mod “[L-System Tree Utility](https://forum.luanti.org/viewtopic.php?f=11&t=9458)”.
+
+{{% comment %}} cspell:disable {{% /comment %}}
+```lua
+treedef = {
+	axiom="FFFFFAFFBF",
+	rules_a="[&&&FFFFF&&FFFF][&&&++++FFFFF&&FFFF][&&&----FFFFF&&FFFF]",
+	rules_b="[&&&++FFFFF&&FFFF][&&&--FFFFF&&FFFF][&&&------FFFFF&&FFFF]",
+	trunk="mapgen_tree",
+	leaves="mapgen_leaves",
+	angle=30,
+	iterations=2,
+	random_level=0,
+	trunk_type="single",
+	thin_branches=true,
+	fruit_chance=10,
+	fruit="mapgen_apple",
+}
+```
+{{% comment %}} cspell:enable {{% /comment %}}
+
+[![Apple Tree](/images/Apple_Tree.webp)](/images/Apple_Tree.webp)
+
+### Acacia
+
+* **Game used**: Minetest Game
+* **Additional mods**: _None_
+
+{{% comment %}} cspell:disable {{% /comment %}}
+```lua
+treedef={
+   axiom="FFFFFFccccA",
+   rules_a = "[B]//[B]//[B]//[B]",
+   rules_b = "&TTTT&TT^^G&&----GGGGGG++GGG++"   -- line up with the "canvas" edge
+         .."fffffffGG++G++"               -- first layer, drawn in a zig-zag raster pattern
+         .."Gffffffff--G--"
+         .."ffffffffG++G++"
+         .."fffffffff--G--"
+         .."fffffffff++G++"
+         .."fffffffff--G--"
+         .."ffffffffG++G++"
+         .."Gffffffff--G--"
+         .."fffffffGG"
+         .."^^G&&----GGGGGGG++GGGGGG++"      -- re-align to second layer canvas edge
+         .."ffffGGG++G++"               -- second layer
+         .."GGfffff--G--"
+         .."ffffffG++G++"
+         .."fffffff--G--"
+         .."ffffffG++G++"
+         .."GGfffff--G--"
+         .."ffffGGG",
+   rules_c = "/",
+   trunk="default:acacia_tree",
+   leaves="default:acacia_leaves",
+   angle=45,
+   iterations=3,
+   random_level=0,
+   trunk_type="single",
+   thin_branches=true,
+}
+```
+{{% comment %}} cspell:enable {{% /comment %}}
+
+(no screenshot available)
+
+## See also
+
 * [L-System Tree Utility](https://forum.luanti.org/viewtopic.php?f=11&t=9458) (a mod which helps to create L-system trees in-game)

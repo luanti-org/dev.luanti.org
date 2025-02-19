@@ -28,4 +28,4 @@ An unknown node takes the place of any node that exists in the world that is no 
 
 Punching the node will show the itemstring of the original node and breaking it will give you an Unknown Item with the same itemstring, but will erase any additional metadata associated with the node.
 
-For developers working on mods and games that have existed for a while, you should [always implement compatibility code for migrating old worlds](/keeping-world-compatibility/) when you release updates that may change itemstrings and cause Unknown Nodes to appear - ideally players should never have to see one in their world.
+For developers working on mods and games that have existed for a while, you should [always implement compatibility code for migrating old worlds](/for-creators/keeping-world-compatibility/) when you release updates that may change itemstrings and cause Unknown Nodes to appear - ideally players should never have to see one in their world.

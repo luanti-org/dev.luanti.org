@@ -18,4 +18,4 @@ In the **Heads-Up Display**, you might see:
 *   Minimap
 *   [Chat](/for-players/chat)
 *   [Console](/for-players/console)
-*   [Debug](/content-dev/debug)
+*   [Debug](/for-creators/debug)

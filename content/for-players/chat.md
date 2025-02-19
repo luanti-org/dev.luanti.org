@@ -73,7 +73,7 @@ DM from Alberto: I want to show you my hidden chest.
 
 The chat log’s primary function is to log and show the chat messages in the order of appearance. The latest message appears at the lowest line.
 
-You see the chat log on the [HUD](/hud/) at the upper left part of the screen and in the console. You need to have the HUD enabled or the console opened in order to see the chat log. You can toggle the HUD on and off with F1 (default key binding). The chat log you see on the HUD is somewhat short and only shows the messages for a limited time. Use the console for a full scrollable chat log.
+You see the chat log on the [HUD](/for-players/hud/) at the upper left part of the screen and in the console. You need to have the HUD enabled or the console opened in order to see the chat log. You can toggle the HUD on and off with F1 (default key binding). The chat log you see on the HUD is somewhat short and only shows the messages for a limited time. Use the console for a full scrollable chat log.
 
 These are the following types of messages which can appear in the chat log:
 

@@ -3,6 +3,7 @@ title: Development Tools
 aliases:
 - /Development_Tools
 - /development-tools
+- /content-dev/development-tools
 ---
 
 # Development Tools

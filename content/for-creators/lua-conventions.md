@@ -2,6 +2,7 @@
 title: Lua Conventions
 aliases:
 - /lua-conventions
+- /content-dev/lua-conventions
 ---
 
 # Lua Conventions

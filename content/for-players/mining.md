@@ -36,12 +36,12 @@ If the drop wouldn't fit in your inventory, the items literally drop on the floo
 Mining speed
 ------------
 
-The mining speed is determined by [groups](/groups).
+The mining speed is determined by [groups](/for-creators/groups).
 
 Mining in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/)
 --------------------------------------------------------------------------------------
 
-You start with a [hand](/hand) which is itself able to mine a lot of nodes already, but at the worst speed. Axes are good to mine wooden nodes. Pickaxes are good to mine stone-like nodes. Shovels are very fast at digging dirt, sand and gravel. Axes, pickaxes and shovels come in 6 variants: Wooden, stone, steel, bronze, Mese and diamond. In this order, the tools become stronger and stronger and usually mine faster.
+You start with a [hand](/for-creators/hand) which is itself able to mine a lot of nodes already, but at the worst speed. Axes are good to mine wooden nodes. Pickaxes are good to mine stone-like nodes. Shovels are very fast at digging dirt, sand and gravel. Axes, pickaxes and shovels come in 6 variants: Wooden, stone, steel, bronze, Mese and diamond. In this order, the tools become stronger and stronger and usually mine faster.
 
 **Most nodes drop themselves.** Notable examples for nodes which don’t drop just themselves:
 

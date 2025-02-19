@@ -361,7 +361,7 @@ Yes, you can make both static and animated models using Blockbench now that Luan
 
 ### Can I distribute games outside of Luanti?
 
-Yes, but this is not officially supported in the engine, you will need to maintain a re-branded fork of the engine. See [Distributing Luanti Games](/distributing-luanti-games/) for notes on how to do so.
+Yes, but this is not officially supported in the engine, you will need to maintain a re-branded fork of the engine. See [Distributing Games Outside ContentDB](/for-creators/distributing-games-outside-contentdb.md/) for notes on how to do so.
 
 ### Can I sell games I make with Luanti?
 

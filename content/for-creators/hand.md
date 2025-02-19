@@ -2,6 +2,7 @@
 title: Hand
 aliases:
 - /Hand
+- /hand
 ---
 
 # Hand

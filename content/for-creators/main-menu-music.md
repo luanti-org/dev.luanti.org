@@ -2,6 +2,7 @@
 title: Main menu music
 aliases:
 - /Main_menu_music
+- /main-menu-music
 ---
 
 # Main menu music

@@ -3,6 +3,7 @@ title: Mod interoperability
 aliases:
 - /Mod_interoperability
 - /mod-interoperability
+- /content-dev/mod-interoperability
 ---
 
 # Mod interoperability
@@ -234,4 +235,4 @@ Groups
 
 Another way for interoperability is by using groups. If used properly, they can greatly increase ease-of-use when other modders want to work with our mod. The rule of thumb here is that you generally use groups which are already widely used if you can. Only if your needed group does not exist, you should define your own group.
 
-On this wiki, the [Groups/Custom groups](/Groups/Custom_groups "Groups/Custom groups") page tries to document the usage of groups and lists some commonly used groups. If your mod defines its own groups and they are \*not\* just to be used internally, please edit the Groups page to help other modders.
+On this wiki, the [Groups/Custom groups](/for-creators/groups/Custom_groups "Groups/Custom groups") page tries to document the usage of groups and lists some commonly used groups. If your mod defines its own groups and they are \*not\* just to be used internally, please edit the Groups page to help other modders.

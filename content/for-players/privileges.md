@@ -35,7 +35,7 @@ As of version 5.0.0, Luanti comes with the following privileges:
   * **protection\_bypass**—can bypass protection of blocks (e.g. can open locked chests or steel doors of everyone)
 * administration-related:
   * **server**—can do server maintenance stuff such as `/shutdown`, `/clearobjects`, `/set`, …
-  * **debug**—can access advanced [debug](/content-dev/debug "Debug") features and information, such as the wirewrame in the debug screens (F5). It also prevents the game from restricting information in the debug screen and from restricting the “toggle block bounds” key.
+  * **debug**—can access advanced [debug](/for-creators/debug "Debug") features and information, such as the wirewrame in the debug screens (F5). It also prevents the game from restricting information in the debug screen and from restricting the “toggle block bounds” key.
 
 Irrevocable privileges
 ----------------------

@@ -1,5 +1,7 @@
 ---
 title: Keeping world compatibility
+aliases:
+- /keeping-world-compatibility
 ---
 
 # Keeping world compatibility
@@ -8,23 +10,28 @@ If your game or mod is stable and played by many players then it is a good idea 
 ## Aliases
 Nodes and items support itemstring aliases, allowing you to alias an outdated itemstring to a new one.
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```lua
 core.register_alias('mymod:old_item_name', 'mymod:new_item_name')
 ```
+{{% comment %}} cspell:enable {{% /comment %}}
 
 This is also very useful for keeping compatibility when refactoring and/or namespacing technical mod names in a game:
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```lua
-for _, item in ipairs{
+for _, item in ipairs {
 	"stone", "cobble", "dirt", "grass", -- etc...
 } do
 	core.register_alias('oldmodname:'..item, 'game_newmodname:'..item)
 end
 ```
+{{% comment %}} cspell:enable {{% /comment %}}
 
-## LBMs
-LBMs (short for Loading Block Modifiers) can be used to run a callback function on any given nodes in mapblocks that get loaded and activated. They can be useful for doing more complex migrations of nodes that don't just require an itemstring alias, e.g. updating a node's formspec:
+## Loading Block Modifiers
+Loading Block Modifiers (LBMs) can be used to run a callback function on any given nodes in mapblocks that get loaded and activated. They can be useful for doing more complex migrations of nodes that don't just require an itemstring alias, e.g. updating a node's formspec:
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```lua
 core.register_lbm({
 	label = "Update Cool Block formspec to v2",
@@ -40,3 +47,4 @@ core.register_lbm({
 	end
 })
 ```
+{{% comment %}} cspell:enable {{% /comment %}}

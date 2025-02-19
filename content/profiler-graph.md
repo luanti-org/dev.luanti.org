@@ -25,4 +25,4 @@ The following graphs are available:
 See also
 --------
 
-* [Debug](/debug)
+* [Debug](/for-creators/debug)

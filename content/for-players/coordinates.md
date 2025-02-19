@@ -34,7 +34,7 @@ Finding your coordinates
 
 ### Debug screen
 
-You usually can view your coordinates by using the [debug](/content-dev/debug) screen (open with F5).
+You usually can view your coordinates by using the [debug](/for-creators/debug) screen (open with F5).
 
 For this to work, the game/server needs to allow this _or_ you have the “debug” [privilege](/for-players/privileges).
 

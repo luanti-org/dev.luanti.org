@@ -2,6 +2,7 @@
 title: Groups
 aliases:
 - /Groups
+- /groups
 ---
 
 # Groups
@@ -23,7 +24,7 @@ List of known groups that determine damage and digging time
 -----------------------------------------------------------
 
 {{% comment %}} cspell:disable {{% /comment %}}
-*   oddly\_breakable\_by\_hand: can be broken by [hand](/hand).
+*   oddly\_breakable\_by\_hand: can be broken by [hand](/for-creators/hand).
 *   crumbly: stuff like dirt and sand. Shovels are great to break nodes in this group.
 *   cracky: tough stuff like stone. Pickaxes are great to break nodes in this group.
 *   choppy: something that can be cut using force; eg. trees, wooden planks. Axes are great chopping these down.

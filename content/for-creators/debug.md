@@ -3,10 +3,10 @@ title: Debug
 aliases:
 - /Debug
 - /debug
+- /content-dev/debug
 ---
 
 # Debug
-
 
 The **debug screen** can be accessed by pressing the F5 key (by default) and shows various technical information about Luanti which are mostly interesting for developers, but some information are also useful for players, especially the [coordinates](/for-players/coordinates).
 
