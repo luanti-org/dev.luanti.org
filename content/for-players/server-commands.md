@@ -6,7 +6,7 @@ aliases:
   - /server/commands
 ---
 
-# Server commands
+# Server Commands
 
 **Server commands** (also called “**chat commands**”) are special commands to the server that can be entered by any player via the [chat](/for-players/chat) to cause the server to do something.
 

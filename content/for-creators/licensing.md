@@ -25,7 +25,7 @@ The code of both the Luanti engine and Minetest Game are licensed under [LGPL 2.
 - You must not mix proprietary and LGPLv2.1+ code, see _"what if I use proprietary source code/libraries?"_.
 - You should place the following attribution on any pages where the software can be downloaded, including but not limited to Google Play or a website:
 
-> This \[app/game/...\] uses the Luanti engine \[and Minetest Game\], Copyright 2010-2018 Perttu Ahola and contributors, licensed under LGPLv2.1+
+> This [app/game/...] uses the Luanti engine [and Minetest Game], Copyright 2010-2018 Perttu Ahola and contributors, licensed under LGPLv2.1+
 
 **It is an infringement to only link back to the original source code if you made modifications**
 

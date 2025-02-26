@@ -19,7 +19,7 @@ For more information, see [Getting Started](/for-players/getting-started/).
 ## General information
 
 - [Controls](/for-players/controls)
-- [Server commands](/for-players/server-commands)
+- [Server Commands](/for-players/server-commands)
 - [Privileges](/for-players/privileges)
 - [minetest.conf](/for-players/minetest-conf)
 

@@ -7,14 +7,12 @@ aliases:
 
 # Luanti Documentation
 
-Welcome to the **Luanti Documentation** website. This is a work-in-progress effort with the purpose of acting as a central hub for well-maintained documentation about the Luanti engine, for players as well as for developers.
+Welcome to **Luanti Documentation**. Luanti (formerly [Minetest](https://blog.luanti.org/2024/10/13/Introducing-Our-New-Name/)) is an open-source voxel game engine that includes a client for players and a distribution platform for convenient mod and game installation.
 
-Content from the Luanti Developer Wiki as well as content from the Luanti Wiki relating to the Luanti engine in general have been migrated here, and now redirect to their new location.
+{{% comment %}} Keep this list matching the table of contents ordering {{% /comment %}}
 
-For more information about Luanti as well as how to contribute to this site, see [About](/about/).
-
-## Contents
-
-All pages currently available are listed in the left sidebar, accessible through the hamburger menu to the left on mobile. Some pages are listed under categories and sub-categories, which can be expanded by clicking on the arrow icons to the right. The search bar also allows you to discover what is currently available.
-
-The structure of the documentation is subject to change and a more proper content index will be available in the future.
+- [About](/about) contains more info about Luanti, its history, and how to contribute
+- [For Creators](/for-creators) has info about creating your own game, mod, texture pack, translation, or other creation with or for Luanti
+- [For Engine Devs](/for-engine-devs) has guidance for contributing to the engine powering all Luanti games
+- [For Players](/for-players) has info about how to download the client, install a game, join a multiplayer server, and more
+- [For Server Hosts](/for-server-hosts) has info about setting up your own public or private multiplayer server

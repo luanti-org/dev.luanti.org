@@ -42,7 +42,7 @@ There is a small text file named `texture_packs_here.txt` in the correct locatio
 Windows:
 
 - Browse to your Luanti folder
-- Enter the `games/minetest_game` folder
+- Enter the `games/minetest_game` folder (or whatever game you want to make a texture pack for)
 - Then hit Ctrl+F to invoke the search function,
 - In the search box, enter `*.png` to find all the image files (or directly use the “Images” option in the search page),
 - Next Select All Ctrl+A,

@@ -32,7 +32,7 @@ Minecraft is much better known and many children and teenagers are already playi
 
 **Pro:**
 
-- It's free because it's open source and it's going to stay open.
+- It's free because it's open-source and it's going to stay open.
 - It runs on almost all operating systems and devices ... _except iOS systems_.
 - From all versions (also from the tablet) you can usually visit the same servers.
 

@@ -101,9 +101,9 @@ Another reason is that we have limited time, and we do not have a core developer
 
 Luanti is a volunteer project with limited time and resources. Supporting a new platform takes a lot of effort, and we're only able to officially support platforms with a core developer using it.
 
-In terms of consoles, if someone is willing to make a homebrew port for a game console then it can be done, and this port can be submitted to upstream given that the changes aren't intrusive and some kind of maintenance is kept. Putting Luanti onto a games console in any official capacity is not possible due to NDAs preventing an open source release, which is incompatible with the LGPLv2.1 license.
+In terms of consoles, if someone is willing to make a homebrew port for a game console then it can be done, and this port can be submitted to upstream given that the changes aren't intrusive and some kind of maintenance is kept. Putting Luanti onto a games console in any official capacity is not possible due to NDAs preventing an open-source release, which is incompatible with the LGPLv2.1 license.
 
-Luanti is open source. We welcome contributors to port Luanti to other platforms (providing they follow the licenses of course). Contributors are also welcome to contribute their changes back upstream as well, providing that they're not too intrusive.
+Luanti is open-source. We welcome contributors to port Luanti to other platforms (providing they follow the licenses of course). Contributors are also welcome to contribute their changes back upstream as well, providing that they're not too intrusive.
 
 ### Where can I ask questions?
 

@@ -11,6 +11,10 @@ bookCollapseSection: true
 
 This page explains how to translate Luanti.
 
+## Translating mods and games
+
+To learn how Luanti mods and games are translated, go to [Translating Mods and Games](/for-creators/translation/mods-and-games).
+
 ## Translating the engine
 
 Translations of the Luanti engine are [automated using Weblate](https://hosted.weblate.org/projects/minetest/minetest/). Register an account, select the “Minetest” project (or “Luanti” if it has been renamed) and start translating. Translation is a continuous effort and the texts will change almost at every version.
@@ -112,10 +116,6 @@ The template file as well as all locale files need to be updated before release 
 To update the builtin locale files, run `../util/mod_translation_updater.py` from the builtin directory (requires Python 3).
 
 To start a new translation, copy `template.txt` to create `__builtin.<LANGUAGE_CODE>.tr`.
-
-## Translating mods and games
-
-To learn how Luanti mods and games are translated, go to [Translating Mods and Games](/for-creators/translation/mods-and-games).
 
 ## Untranslatable texts
 
