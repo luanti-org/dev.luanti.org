@@ -84,7 +84,7 @@ My IP address only changes if the modem disconnects, which is pretty rare, so I 
 
 (Note: the description for FreeDNS Update warns that if you use this app, you must enter your username in lowercase, and the password is case sensitive with a maximum length of 16 characters)
 
-## Step 5: Let your minetest server know its domain name
+## Step 5: Let your Luanti server know its domain name
 
 Edit your server's minetest.conf file, and set address to be your domain:
 

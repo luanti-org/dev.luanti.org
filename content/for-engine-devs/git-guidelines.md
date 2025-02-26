@@ -20,7 +20,7 @@ For guidelines about overall pull request quality, see [Merging core pull reques
 
 Feature freezes take effect in the master branch, and while the freeze is active, a separate development branch ("dev" or some other suitable name) is made into which pull requests are merged. It is then rebased onto master once the freeze is over. However, creating the branch may be skipped (**it usually is!**) when nobody feels like merging features during a feature freeze.
 
-The `minetest` and `minetest_game` repositories contain the stable-0.4 branch, which has to be updated to the latest stable 0.4 series version at each release.
+The `luanti` and `minetest_game` repositories contain the stable-0.4 branch, which has to be updated to the latest stable 0.4 series version at each release.
 
 ### Upstream pull requests
 
@@ -41,15 +41,15 @@ The `minetest` and `minetest_game` repositories contain the stable-0.4 branch, w
 
 Tell people openly what you do, and if someone finds a problem in what you do, allow resolving to take its time.
 
-If you have a **small patch**, fixing some compiler error or other trivial mistake, notify about fixing it on #minetest-dev, wait for 5...15 minutes and push it. To save time, you should notify when _finding_ the problem, not when _having it fixed_. If someone asks something about it, delay pushing and link the patch \[4\] or tell whatever else people want to know.
+If you have a **small patch**, fixing some compiler error or other trivial mistake, notify about fixing it on #luanti-dev, wait for 5...15 minutes and push it. To save time, you should notify when _finding_ the problem, not when _having it fixed_. If someone asks something about it, delay pushing and link the patch \[4\] or tell whatever else people want to know.
 
-Rule 1 is **only** applied to the `minetest/minetest` and `minetest/minetest_game` repositories. For the other repos apply some common sense: Check who last worked on it or who wrote most of the code (if applicable), consider consulting them for changes especially if they're large. If nobody has cared about a repo for a long time you don't have to worry either.
+Rule 1 is **only** applied to the [luanti-org/luanti](https://github.com/luanti-org/luanti) and [luanti-org/minetest_game](https://github.com/luanti-org/minetest_game) repositories. For the other repos apply some common sense: Check who last worked on it or who wrote most of the code (if applicable), consider consulting them for changes especially if they're large. If nobody has cared about a repo for a long time you don't have to worry either.
 
 #### Notes
 
 \[1\] Upstream is at [https://github.com/luanti-org/luanti](https://github.com/luanti-org/luanti)
 
-\[2\] The team: [https://github.com/orgs/minetest/people](https://github.com/orgs/minetest/people)
+\[2\] The team: [https://github.com/orgs/luanti-org/people](https://github.com/orgs/luanti-org/people)
 
 \[3\] On Github, press the "Rebase and merge" button. Of course you can rebase a remote branch in a local repository for more in-depth tools. There's also the ancient workflow of appending .patch to the pull request URL, getting into your project directory and doing `git am <patch>`. Similarly for single commits.
 

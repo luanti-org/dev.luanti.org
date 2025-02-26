@@ -59,7 +59,7 @@ cd luajit
 make amalg
 ```
 
-(`luajit` should be a sibling directory to the `minetest` directory cloned below)
+(`luajit` should be a sibling directory to the `luanti` directory cloned below)
 
 ## Download
 
@@ -67,7 +67,7 @@ Clone Luanti with Git. `-b stable-5` will checkout the latest stable version to 
 
 ```bash
 git clone -b stable-5 --depth 1 https://github.com/luanti-org/luanti.git
-cd minetest
+cd luanti
 ```
 
 ## Build

@@ -17,7 +17,7 @@ A bug might already be reported or even fixed by the time you are having problem
 
 - [Newest Luanti version](https://www.luanti.org/downloads/) - are you using the most recent one?
 - [GitHub issue tracker](https://github.com/luanti-org/luanti/issues?q=is%3Aissue)
-- [Libera IRC (English)](https://kiwiirc.com/nextclient/irc.libera.chat:+6697/#minetest) (answers might take a while)
+- [Libera IRC (English)](https://kiwiirc.com/nextclient/irc.libera.chat:+6697/#luanti) (answers might take a while)
 - [Luanti Forums: 'Problems'](https://forum.luanti.org/viewforum.php?f=6)
 
 ### Gathering information
@@ -26,7 +26,7 @@ If you cannot find any similar reported bug, please collect as much relevant inf
 
 - Luanti version (ex. "0.4.17.1", "5.1.1", "5.1.0-dev-numbers")
   - This is displayed in the window title bar.
-  - For advanced users: provide the output of `minetest --version`
+  - For advanced users: provide the output of `luanti --version`
 - Operating system and version (ex. "Ubuntu 18.04", "Windows 10", "Android 9")
   - Please be as precise as possible.
 

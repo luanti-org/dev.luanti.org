@@ -8,7 +8,7 @@ aliases:
 
 # Meetings
 
-Core developer meetings are held when needed. They take place in the #minetest-dev [IRC](/about/irc) channel.
+Core developer meetings are held when needed. They take place in the #luanti-dev [IRC](/about/irc) channel.
 
 This Wiki page contains the meeting plans for upcoming meetings, and meeting notes for previous meetings.
 
@@ -18,7 +18,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 
 ## 2025-03-02
 
-**Remember to post meetings in the [GitHub discussions](https://github.com/orgs/minetest/discussions) in advance**
+**Remember to post meetings in the [GitHub discussions](https://github.com/orgs/luanti-org/discussions) in advance**
 
 Add your points here. Most important comes first.
 

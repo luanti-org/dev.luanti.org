@@ -26,7 +26,7 @@ Welcome to Luanti! This page explains what Luanti is all about, how to get it, a
   - The 64-bit build is extremely recommended. Always use this unless you are absolutely sure you're on an old machine that doesn't have a 64-bit processor.
 - Luanti on Windows is distributed in a portable archive. Extract it as a whole where you want, whether it be on your desktop or in your documents folder.
   - Keep in mind you need write permissions to the folder. **Do NOT save to `C:\Program Files\` or similar, as it will cause problems (no write access).**
-- To run Luanti, open the extracted directory and look for the `bin` (binary) directory. Inside the `bin` directory is the Luanti executable, `minetest.exe`.
+- To run Luanti, open the extracted directory and look for the `bin` (binary) directory. Inside the `bin` directory is the Luanti executable, `luanti.exe`.
   - If you want a desktop shortcut or the like, just make create a shortcut to this executable.
 
 ### macOS

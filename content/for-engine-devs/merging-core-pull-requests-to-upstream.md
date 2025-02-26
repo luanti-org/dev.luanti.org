@@ -21,7 +21,7 @@ Also see:
 
 ## Requirements
 
-There are five major requirements that each pull request must fulfill in order to be mergeable to upstream Minetest.
+There are five major requirements that each pull request must fulfill in order to be mergeable to upstream Luanti.
 
 1.  It should follow a roadmap in some way, to make sure it fits the whole picture of the project. Different roadmaps and project guidance is managed in [https://github.com/luanti-org/luanti/blob/master/doc/direction.md](https://github.com/luanti-org/luanti/blob/master/doc/direction.md). A core dev can decide to review and merge something that doesn't follow direction.md if they consider it to be beneficial to the project.
 2.  It must work in the first place. Compile it and test it in game, or write mod code that uses it.

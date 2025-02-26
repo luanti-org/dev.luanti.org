@@ -21,12 +21,12 @@ If one of the below mentioned directories does not exist, create it.
 
 ## Installation directory
 
-The common place to install them is `$path_user/clientmods/`. That is `minetest-install-directory/clientmods/` in the official Windows releases and on GNU/Linux with `RUN_IN_PLACE` enabled and **`~/.minetest/clientmods/`** in globally installed Luanti versions.
+The common place to install them is `$path_user/clientmods/`. That is `luanti-install-directory/clientmods/` in the official Windows releases and on GNU/Linux with `RUN_IN_PLACE` enabled and **`~/.minetest/clientmods/`** in globally installed Luanti versions.
 
 - Location of the clientmods folder within the folder structure of a run-in-place installation of Luanti, including some of the folders Luanti adds after some usage as client and server, as well as the positions (…) that custom-made content goes. Irrelevant folders are not expanded.
 
 ```
-minetest/
+luanti/
 ├── bin/
 ├── builtin/
 ├── cache/
